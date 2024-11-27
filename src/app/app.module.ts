@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ServiceComponent } from './service/service.component';
 import { ProposComponent } from './propos/propos.component';
+import { AfterheaderComponent } from './afterheader/afterheader.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ProposComponent } from './propos/propos.component';
     HeaderComponent,
     FooterComponent,
     ServiceComponent,
-    ProposComponent
+    ProposComponent,
+    AfterheaderComponent
   ],
   imports: [
     BrowserModule,
