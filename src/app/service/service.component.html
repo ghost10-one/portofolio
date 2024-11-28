@@ -1,0 +1,32 @@
+<div class="bg-white py-6 mx-10 sm:py-8 lg:py-12" >
+  <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+    <!-- text - start -->
+    <div class="mb-10 md:mb-16">
+      <h2 class="mb-4 text-center text-4xl font-bold text-indigo-600 md:mb-6 lg:text-5xl">Mes competences professionnelles</h2>
+
+      <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
+
+        Expert en administration des réseaux et systèmes, avec une solide expérience en maintenance
+        informatique, conception de circuits
+        électroniques, et solutions connectées pour répondre aux besoins technologiques des entreprises.
+      </p>
+    </div>
+    <!-- text - end -->
+
+    <div class="grid gap-8 sm:grid-cols-2 md:gap-12 xl:grid-cols-3 xl:gap-16">
+      <!-- feature - start -->
+      <div class="flex gap-4 md:gap-6 shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] rounded-lg " *ngFor="let skill of skills ">
+        <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-lg  shadow-lg md:h-14 md:w-14 md:rounded-xl">
+          <img class="h-16 w-16 rounded-md  transition duration-200 group-hover:scale-110" [src]="skill.img">
+        </div>
+        <div>
+          <h3 class="mb-2 text-3xl text-indigo-600 font-bold md:text-2xl">{{skill.title}}</h3>
+          <p class="mb-2 font-semibold text-gray-500">{{skill.description}}</p>
+          <a href="#" class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700"></a>
+        </div>
+      </div>
+      <!-- feature - end -->
+    </div>
+  </div>
+</div>
+<!-- features - end -->
