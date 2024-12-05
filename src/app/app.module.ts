@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ServiceComponent } from './service/service.component';
 import { ProposComponent } from './propos/propos.component';
 import { AfterheaderComponent } from './afterheader/afterheader.component';
+import { TechnoComponent } from './techno/techno.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AfterheaderComponent } from './afterheader/afterheader.component';
     FooterComponent,
     ServiceComponent,
     ProposComponent,
-    AfterheaderComponent
+    AfterheaderComponent,
+    TechnoComponent
   ],
   imports: [
     BrowserModule,
